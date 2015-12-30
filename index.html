@@ -203,15 +203,15 @@
 <h3>Using AkuaJs</h3>
 Add dependencies to the head section of your main html:
 <pre><code class="javascript">
-  &lt;script src=&quot;https://rawgit.com/Qrist0ph/AkuaJs/latest/dist/plain/libs/D3/d3.min.js&quot;&gt;&lt;/script&gt;    
-  &lt;script data-main=&quot;https://rawgit.com/Qrist0ph/AkuaJs/latest/dist/plain/main.js&quot; src=&quot;https://rawgit.com/Qrist0ph/AkuaJs/latest/dist/plain/libs/require.js&quot;&gt;&lt;/script&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://rawgit.com/Qrist0ph/AkuaJs/latest/dist/plain/libs/nvd3/nv.d3.min.css&quot; type=&quot;text/css&quot; /&gt;  
+&lt;script src=&quot;https://rawgit.com/Qrist0ph/AkuaJs/latest/dist/plain/libs/D3/d3.min.js&quot;&gt;&lt;/script&gt;    
+&lt;script data-main=&quot;https://rawgit.com/Qrist0ph/AkuaJs/latest/dist/plain/main.js&quot; src=&quot;https://rawgit.com/Qrist0ph/AkuaJs/latest/dist/plain/libs/require.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://rawgit.com/Qrist0ph/AkuaJs/latest/dist/plain/libs/nvd3/nv.d3.min.css&quot; type=&quot;text/css&quot; /&gt;  
 </code></pre> 
    
 Use it like that:   
    <pre><code class="html">
 
-    &lt;!DOCTYPE html&gt;
+&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
 &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
@@ -244,21 +244,16 @@ jQuery.sap.require(&quot;AkuaJs.PieChart&quot;);
     new AkuaJs.PieChart({
              axis0: A({
              crosslists:
-                        [
-                            TCL([
-                                T([eCar]), T([eBike]), T([eBoat])
-                            ]),
-                            TCL([
-                                T([eAugust])
-                            ])
-                        ]
+                [ TCL([
+                     T([eCar]), T([eBike]), T([eBoat])
+                    ])]
                     }),
              slicer: T([eCost]),
 
 			 connection : LocalCubeConnection(HyperCube(SDTL([ 
-								 T([eAugust, eCar, eCost],440)
-								,T([eAugust, eBike, eCost],77)    
-								,T([eAugust, eBoat, eCost],120)]))),
+					T([eAugust, eCar, eCost],440)
+					,T([eAugust, eBike, eCost],77)    
+					,T([eAugust, eBoat, eCost],120)]))),
              colors:[&quot;#FFD700&quot;, &quot;#F4A460&quot;,&quot;#990000&quot;],
              numberFormat:&#39;,.2&#39;
 
