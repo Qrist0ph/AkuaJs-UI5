@@ -3,6 +3,8 @@ AkuaJs for SAP UI5
 
 SAP UI5 Wrapper for [AkuaJs Library](http://qrist0ph.github.io/AkuaJs/).
 
+See [Project Page](http://qrist0ph.github.io/AkuaJs-UI5/).
+
 ## Quick Start 
 
 ```html
