@@ -1,11 +1,3 @@
-# AkuaJs-UI5
-AkuaJs for SAP UI5
-
-SAP UI5 Wrapper for [AkuaJs Library](http://qrist0ph.github.io/AkuaJs/).
-
-## Quick Start 
-
-```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,7 +18,7 @@ SAP UI5 Wrapper for [AkuaJs Library](http://qrist0ph.github.io/AkuaJs/).
    
 <script>
 jQuery.sap.registerModulePath('AkuaJs', 'https://rawgit.com/Qrist0ph/AkuaJs-UI5/latest/build/AkuaJs');
-jQuery.sap.require("AkuaJs.PieChart");
+jQuery.sap.require("AkuaJs.BarChart");
 
  require(["core/CoreBundle"], function() { 
     eJune = E(D("Month"), "June");
@@ -38,7 +30,7 @@ jQuery.sap.require("AkuaJs.PieChart");
 	eCost = E(D("Measure"), "Costs");
 	eRevenue = E(D("Measure"), "Revenue");   
                 
-    new AkuaJs.PieChart({
+    new AkuaJs.BarChart({
                         axis0: A({
                         crosslists:
                         [
@@ -56,8 +48,7 @@ jQuery.sap.require("AkuaJs.PieChart");
 								 T([eAugust, eCar, eCost],440)
 								,T([eAugust, eBike, eCost],77)    
 								,T([eAugust, eBoat, eCost],120)]))),
-                   colors:["#FFD700", "#F4A460","#990000"],
-                   numberFormat:',.2'
+                   colors:["#FFD700", "#F4A460"]
 
 }).placeAt('content')
  });
@@ -72,4 +63,3 @@ jQuery.sap.require("AkuaJs.PieChart");
 
 
 </html>
-```

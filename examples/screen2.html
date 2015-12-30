@@ -17,8 +17,8 @@
     </script>
    
 <script>
-jQuery.sap.registerModulePath('AkuaJs', 'https://d739cc1f9f50baf2effcb0354365770503c4616c.googledrive.com/host/0B2Od6vq-b27zNWxtRTlaWWJLUU0/SapUi5/AkuaJsUi5/');
-jQuery.sap.require("AkuaJs.BarChart");
+jQuery.sap.registerModulePath('AkuaJs', 'https://rawgit.com/Qrist0ph/AkuaJs-UI5/latest/build/AkuaJs');
+jQuery.sap.require("AkuaJs.PieChart");
 
  require(["core/CoreBundle"], function() { 
     eJune = E(D("Month"), "June");
@@ -30,7 +30,7 @@ jQuery.sap.require("AkuaJs.BarChart");
 	eCost = E(D("Measure"), "Costs");
 	eRevenue = E(D("Measure"), "Revenue");   
                 
-    new AkuaJs.BarChart({
+    new AkuaJs.PieChart({
                         axis0: A({
                         crosslists:
                         [
@@ -48,7 +48,8 @@ jQuery.sap.require("AkuaJs.BarChart");
 								 T([eAugust, eCar, eCost],440)
 								,T([eAugust, eBike, eCost],77)    
 								,T([eAugust, eBoat, eCost],120)]))),
-                   colors:["#FFD700", "#F4A460"]
+                   colors:["#FFD700", "#F4A460","#990000"],
+                   numberFormat:',.2'
 
 }).placeAt('content')
  });
