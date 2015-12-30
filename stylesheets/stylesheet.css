@@ -51,9 +51,10 @@ body {
   font-family: 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 1em;
   line-height: 1.5;
-  color: #6d6d6d;
+  /*color: #6d6d6d;*/
+  background: #E0F2F4;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-  background: #e7e7e7 url(../images/body-bg.png) 0 0 repeat;
+  /*background: #e7e7e7 url(../images/body-bg.png) 0 0 repeat;*/
 }
 
 a {
@@ -86,7 +87,7 @@ header h2 {
 
 #container {
   min-height: 595px;
-  background: transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat;
+  /*background: transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat;*/
 }
 
 .inner {
@@ -371,3 +372,72 @@ footer a:hover {
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) { }
+
+
+
+#screen1 span {
+  background: transparent url(../images/screen1.png) no-repeat;display:inline-block; height: 200px; width:200px
+}
+
+#screen2 span {
+  display:inline-block; height: 200px; width:200px
+}
+
+.screen1{
+    height: 200px; width:200px;  background: transparent url(../images/screen1.png)  no-repeat;display: block;
+}
+
+.screen2{
+    height: 200px; width:200px;  background: transparent url(../images/screen2.png)  no-repeat;display: block;
+}
+
+.screen3{
+    height: 200px; width:200px;  background: transparent url(../images/screen3.png)  no-repeat;display: block;
+}
+
+.screen4{
+    height: 200px; width:200px;  background: transparent url(../images/screen4.png)  no-repeat;display: block;
+}
+
+.screen5{
+    height: 200px; width:200px;  background: transparent url(../images/screen5.png)  no-repeat;display: block;
+}
+
+
+.screen6{
+    height: 200px; width:200px;  background: transparent url(../images/screen6.png)  no-repeat;display: block;
+}
+
+.screen7{
+    height: 200px; width:200px;  background: transparent url(../images/screen7.png)  no-repeat;display: block;
+}
+
+
+.screen8{
+    height: 200px; width:200px;  background: transparent url(../images/screen8.png)  no-repeat;display: block;
+}
+
+.screen9{
+    height: 200px; width:200px;  background: transparent url(../images/screen9.png)  no-repeat;display: block;
+}
+
+.screen10{
+    height: 200px; width:200px;  background: transparent url(../images/screen10.png)  no-repeat;display: block;
+}
+
+.screen11{
+    height: 200px; width:200px;  background: transparent url(../images/screen11.png)  no-repeat;display: block;
+}
+
+.screen12{
+    height: 200px; width:200px;  background: transparent url(../images/screen12.png)  no-repeat;display: block;
+}
+.outer{
+     display: table-cell; padding: 10px ; 
+}
+
+.thumbText{
+    background: black;color:white !important;clear:left;float:left;margin-bottom: 0px
+}
+
+
