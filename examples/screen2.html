@@ -44,10 +44,10 @@ jQuery.sap.require("AkuaJs.PieChart");
                     }),
                     slicer: T([eCost]),
 
-					connection : LocalCubeConnection(HyperCube(SDTL([ 
-								 T([eAugust, eCar, eCost],440)
-								,T([eAugust, eBike, eCost],77)    
-								,T([eAugust, eBoat, eCost],120)]))),
+					connection :[ 
+                                 T([eAugust, eCar, eCost],440)
+                                ,T([eAugust, eBike, eCost],77)    
+                                ,T([eAugust, eBoat, eCost],120)],
                    colors:["#FFD700", "#F4A460","#990000"],
                    numberFormat:',.2'
 

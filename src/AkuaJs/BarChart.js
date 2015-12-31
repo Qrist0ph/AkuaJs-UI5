@@ -1,3 +1,4 @@
+ jQuery.sap.require('AkuaJs.Core');
  jQuery.sap.declare("AkuaJs.BarChart"); 
 
    
@@ -22,7 +23,7 @@
 				var barchart = chart({
 					axis0: me.getAxis0(),
 					slicer: me.getSlicer(),
-					Connection : me.getConnection(),
+					Connection : LocalCubeConnection(HyperCube(SDTL( me.getConnection()))),
                     colors:me.getColors(),
                     numberFormat : me.getNumberFormat()
 
