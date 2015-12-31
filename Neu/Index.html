@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv='Content-Type' content='text/html;charset=UTF-8' />
+    <script src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+            id="sap-ui-bootstrap"
+            data-sap-ui-libs="sap.m"
+            data-sap-ui-theme="sap_bluecrystal">
+
+    </script>
+
+    <script src="https://rawgit.com/Qrist0ph/AkuaJs/latest/dist/plain/libs/D3/d3.min.js"></script>    
+    <!--<script data-main="https://rawgit.com/Qrist0ph/AkuaJs/latest/src/main.js" src="https://rawgit.com/Qrist0ph/AkuaJs/latest/src/libs/require.js"></script>-->
+      <script data-main="https://rawgit.com/Qrist0ph/AkuaJs/latest/dist/plain/main.js" src="https://rawgit.com/Qrist0ph/AkuaJs/latest/dist/plain/libs/require.js"></script>
+    <link rel="stylesheet" href="https://rawgit.com/Qrist0ph/AkuaJs/latest/dist/plain/libs/nvd3/nv.d3.min.css" type="text/css" />    
+ <link rel="stylesheet" href="https://rawgit.com/Qrist0ph/AkuaJs/latest/dist/plain/libs/leaflet/leaflet.css">
+
+<script  src="berliner-bezirke.geojson"></script>
+    
+
+    <link href="css/ui5applicationiii3.css" rel="stylesheet" type="text/css" />
+    <script>
+        sap.ui.localResources("ui5applicationiii3");
+        sap.ui.localResources("util");
+        sap.ui.localResources("i18n");
+        var app = new sap.m.App({ initialPage: "app" });
+        var page = sap.ui.view({ id: "app", viewName: "ui5applicationiii3.Main", type: sap.ui.core.mvc.ViewType.JS });
+        app.addPage(page);
+        app.placeAt("content");
+
+
+
+    </script>
+
+
+    <style>
+        #map {
+            width: 800px;
+            height: 500px;
+        }
+        .info {
+            padding: 6px 8px;
+            font: 14px/16px Arial, Helvetica, sans-serif;
+            background: white;
+            background: rgba(255,255,255,0.8);
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            border-radius: 5px;
+        }
+            .info h4 {
+                margin: 0 0 5px;
+                color: #777;
+            }
+        .legend {
+            text-align: left;
+            line-height: 18px;
+            color: #555;
+        }
+            .legend i {
+                width: 18px;
+                height: 18px;
+                float: left;
+                margin-right: 8px;
+                opacity: 0.7;
+            }
+    </style>
+</head>
+<body class="sapUiBody" role="application">
+    <div id="content"></div>
+</body>
+
+
+</html>

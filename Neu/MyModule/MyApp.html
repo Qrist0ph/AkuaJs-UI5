@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv='Content-Type' content='text/html;charset=UTF-8' />
+    <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+            id="sap-ui-bootstrap"
+            data-sap-ui-libs="sap.m"
+            data-sap-ui-theme="sap_bluecrystal">
+    </script>
+   
+
+<script>
+jQuery.sap.registerModulePath('my.webapp', 'https://d739cc1f9f50baf2effcb0354365770503c4616c.googledrive.com/host/0B2Od6vq-b27zNWxtRTlaWWJLUU0/SapUi5/MyModule/');
+jQuery.sap.require('my.webapp.Foo');
+
+new my.useful.SampleModule.MyButton().placeAt('content')
+
+
+jQuery.sap.registerResourcePath('my.webapp', 'https://d739cc1f9f50baf2effcb0354365770503c4616c.googledrive.com/host/0B2Od6vq-b27zNWxtRTlaWWJLUU0/SapUi5/MyModule/');
+sap.ui.require([
+"my.webapp.bar"
+], function (SomeClass) {
+  "use strict";
+var test = new SomeClass();
+});
+</script>
+
+
+</head>
+<body class="sapUiBody" role="application">
+    <div id="content"></div>
+</body>
+
+
+</html>
