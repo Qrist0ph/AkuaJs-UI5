@@ -1,8 +1,8 @@
- jQuery.sap.require('AkuaJs.Core');
- jQuery.sap.declare("AkuaJs.BarChart"); 
+jQuery.sap.require('AkuaJs.Core');
+jQuery.sap.declare("AkuaJs.Map"); 
 
    
-  sap.ui.core.Control.extend("AkuaJs.BarChart", {  
+  sap.ui.core.Control.extend("AkuaJs.Map", {  
             renderer: function (oRm, oControl) {  
                 oRm.write("<div");  
                 oRm.writeControlData(oControl);  
@@ -18,14 +18,14 @@
     }}, 
             onAfterRendering: function (event) {  
 			var me = this;
-			 require(["BarChartNvd3"], function(chart) {
+			 require(["AkuaLeaflet"], function(chart) {
 			
 				var barchart = chart({
 					axis0: me.getAxis0(),
 					slicer: me.getSlicer(),
 					Connection : LocalCubeConnection(HyperCube(SDTL( me.getConnection()))),
                     colors:me.getColors(),
-                    numberFormat : me.getNumberFormat()
+                    numberFormat :  me.getNumberFormat()
 
 				});
 
