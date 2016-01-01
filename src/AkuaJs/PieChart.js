@@ -1,5 +1,5 @@
 jQuery.sap.require('AkuaJs.Core');
-jQuery.sap.declare("AkuaJs.BarChart"); 
+jQuery.sap.declare("AkuaJs.PieChart"); 
 
    
   sap.ui.core.Control.extend("AkuaJs.PieChart", {  
