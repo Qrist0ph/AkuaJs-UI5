@@ -60,7 +60,7 @@ sap.ui.jsview("ui5applicationiii3.Main", {
                             press: function () {
                                 oSplitApp.toDetail("start");
                             },
-                            // icon:"sap-icon://arrow-bottom"
+                            icon:"images/tesseract.png"
                            
                         }),
                         new sap.m.StandardListItem({
