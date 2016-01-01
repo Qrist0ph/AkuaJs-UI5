@@ -30,7 +30,7 @@ jQuery.sap.require("AkuaJs.PieChart");
             }),
              new sap.m.Link({
                 text: "Stand Alone",
-                href: "http://qrist0ph.github.io/AkuaJs-UI5/screen2.html"
+                href: "screen2.html"
             }),
                  new AkuaJs.PieChart({
                         axis0: A({
