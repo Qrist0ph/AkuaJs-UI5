@@ -1,9 +1,9 @@
-sap.ui.jsview("ui5applicationiii3.PieChart", {
+sap.ui.jsview("ui5applicationiii3.ColumnChart", {
 
 createContent: function (oController) {
-jQuery.sap.registerModulePath('AkuaJs', 'https://d739cc1f9f50baf2effcb0354365770503c4616c.googledrive.com/host/0B2Od6vq-b27zNWxtRTlaWWJLUU0/SapUi5/');      
-//jQuery.sap.registerModulePath('AkuaJs', 'https://rawgit.com/Qrist0ph/AkuaJs-UI5/latest/build/AkuaJs');          
-jQuery.sap.require("AkuaJs.PieChart");
+//jQuery.sap.registerModulePath('AkuaJs', 'https://d739cc1f9f50baf2effcb0354365770503c4616c.googledrive.com/host/0B2Od6vq-b27zNWxtRTlaWWJLUU0/SapUi5/');      
+jQuery.sap.registerModulePath('AkuaJs', 'https://rawgit.com/Qrist0ph/AkuaJs-UI5/latest/build/AkuaJs');          
+jQuery.sap.require("AkuaJs.BarChart");
 
     eJune = E(D("Month"), "June");
     eAugust = E(D("Month"), "August");
@@ -15,20 +15,20 @@ jQuery.sap.require("AkuaJs.PieChart");
 	eRevenue = E(D("Measure"), "Revenue");   
     
     return new sap.m.Page( {
-            title: "Pie Chart",
+            title: "Column Chart",
             content: [
                  new sap.m.Link({
                 text: "View Code  ",
-                href: "https://github.com/Qrist0ph/AkuaJs-UI5/blob/gh-pages/screen2.html"
+                href: "https://github.com/Qrist0ph/AkuaJs-UI5/blob/gh-pages/screen10.html"
             }), new sap.m.Label({
                 text: "  ",
                 width: "10px"
             }),
              new sap.m.Link({
                 text: "Stand Alone",
-                href: "screen2.html"
+                href: "screen10.html"
             }),
-                 new AkuaJs.PieChart({
+                 new AkuaJs.BarChart({
                         axis0: A({
                         crosslists:
                         [

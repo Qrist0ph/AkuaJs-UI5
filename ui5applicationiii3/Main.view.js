@@ -79,7 +79,14 @@ sap.ui.jsview("ui5applicationiii3.Main", {
                             },
                             icon: "images/screen2.png"
                         }),
-                         
+                          new sap.m.StandardListItem({
+                            title: "Column Chart",
+                            type: "Navigation",
+                            press: function () {
+                                oSplitApp.toDetail("columnChart");
+                            },
+                            icon: "images/screen10.png"
+                        }),
                     ]
                 }),
 
@@ -95,6 +102,7 @@ sap.ui.jsview("ui5applicationiii3.Main", {
         .addDetailPage(sap.ui.view({ id: "start", viewName: "ui5applicationiii3.Start", type: sap.ui.core.mvc.ViewType.JS }))
         .addDetailPage(sap.ui.view({ id: "map", viewName: "ui5applicationiii3.Map", type: sap.ui.core.mvc.ViewType.JS }))
         .addDetailPage(sap.ui.view({ id: "pieChart", viewName: "ui5applicationiii3.PieChart", type: sap.ui.core.mvc.ViewType.JS }))
+        .addDetailPage(sap.ui.view({ id: "columnChart", viewName: "ui5applicationiii3.ColumnChart", type: sap.ui.core.mvc.ViewType.JS }))
                 
         ;
 
