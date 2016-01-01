@@ -11,6 +11,7 @@ jQuery.sap.require("AkuaJs.PieChart");
 
 
 
+
     eJune = E(D("Month"), "June");
     eAugust = E(D("Month"), "August");
 	ePoland = E(D("Country"), "Poland");        
@@ -23,11 +24,15 @@ jQuery.sap.require("AkuaJs.PieChart");
     return new sap.m.Page( {
             title: "Pie Chart",
             content: [
-                new sap.m.Label({
-                text: "this is Detail 2"
+                 new sap.m.Link({
+                text: "View Code  ",
+                href: "https://github.com/Qrist0ph/AkuaJs-UI5/blob/gh-pages/screen2.html"
             }),
-            
-             new AkuaJs.PieChart({
+             new sap.m.Link({
+                text: "Stand Alone",
+                href: "http://qrist0ph.github.io/AkuaJs-UI5/screen2.html"
+            }),
+                 new AkuaJs.PieChart({
                         axis0: A({
                         crosslists:
                         [
@@ -46,7 +51,9 @@ jQuery.sap.require("AkuaJs.PieChart");
                                 ,T([eAugust, eBoat, eCost],120)],
                    colors:["#FFD700", "#F4A460","#990000"],
                    numberFormat:',.2'
-})
+}) ,
+   
+          
             ]
         });
     }

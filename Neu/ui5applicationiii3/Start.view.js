@@ -90,10 +90,10 @@ createContent: function (oController) {
 +'                    }),<br/>'
 +'             slicer: T([eCost]),<br/>'
 +'<br/>'
-+'			 connection : LocalCubeConnection(HyperCube(SDTL([ <br/>'
++'			 connection : [ <br/>'
 +'					T([eAugust, eCar, eCost],440)<br/>'
 +'					,T([eAugust, eBike, eCost],77)    <br/>'
-+'					,T([eAugust, eBoat, eCost],120)]))),<br/>'
++'					,T([eAugust, eBoat, eCost],120)],<br/>'
 +'             colors:[&quot;#FFD700&quot;, &quot;#F4A460&quot;,&quot;#990000&quot;],<br/>'
 +'             numberFormat:&#39;,.2&#39;<br/>'
 +'<br/>'
@@ -112,7 +112,7 @@ createContent: function (oController) {
               +'<hr/>'
             
               +''
-              +'Copyright © 2015  <a href="https://github.com/Qrist0ph">Christoph Au&szlig;em</a> <br/> <a href="https://de.linkedin.com/pub/christoph-au%C3%9Fem/21/8b4/27">'
+              +'Copyright © 2015  <a href="mailto:christoph.aussem@yaico.de">Christoph Au&szlig;em</a> <br/> <a href="https://de.linkedin.com/pub/christoph-au%C3%9Fem/21/8b4/27">'
               +'<img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_liprofile_blue_80x15_de_DE.png?locale=" width="80" height="15" border="0" alt="Profil von Christoph Außem auf LinkedIn anzeigen">'
              
               +'<br/>'

@@ -79,13 +79,7 @@ sap.ui.jsview("ui5applicationiii3.Main", {
                             },
                             icon: "images/screen2.png"
                         }),
-                         new sap.m.StandardListItem({
-                             title: "Quality Ratings Range",
-                             type: "Navigation",
-                             press: function () {
-                                 oSplitApp.toDetail("detail2");
-                             }
-                         })
+                         
                     ]
                 }),
 
