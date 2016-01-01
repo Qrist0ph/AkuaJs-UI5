@@ -1,8 +1,8 @@
 sap.ui.jsview("ui5applicationiii3.PieChart", {
 
 createContent: function (oController) {
-jQuery.sap.registerModulePath('AkuaJs', 'https://d739cc1f9f50baf2effcb0354365770503c4616c.googledrive.com/host/0B2Od6vq-b27zNWxtRTlaWWJLUU0/SapUi5/');      
-//jQuery.sap.registerModulePath('AkuaJs', 'https://rawgit.com/Qrist0ph/AkuaJs-UI5/latest/build/AkuaJs');          
+//jQuery.sap.registerModulePath('AkuaJs', 'https://d739cc1f9f50baf2effcb0354365770503c4616c.googledrive.com/host/0B2Od6vq-b27zNWxtRTlaWWJLUU0/SapUi5/');      
+jQuery.sap.registerModulePath('AkuaJs', 'https://rawgit.com/Qrist0ph/AkuaJs-UI5/latest/build/AkuaJs');          
 jQuery.sap.require("AkuaJs.PieChart");
 
     eJune = E(D("Month"), "June");
