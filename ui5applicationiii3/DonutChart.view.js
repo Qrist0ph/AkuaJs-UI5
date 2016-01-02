@@ -1,8 +1,8 @@
-sap.ui.jsview("ui5applicationiii3.PieChart", {
+sap.ui.jsview("ui5applicationiii3.DonutChart", {
 
 createContent: function (oController) {
-         
-   jQuery.sap.require("AkuaJs.PieChart");
+        
+jQuery.sap.require("AkuaJs.DonutChart");
 
     eJune = E(D("Month"), "June");
     eAugust = E(D("Month"), "August");
@@ -14,28 +14,25 @@ createContent: function (oController) {
 	eRevenue = E(D("Measure"), "Revenue");   
     
     return new sap.m.Page( {
-            title: "Pie Chart",
+            title: "Donut Chart",
             content: [
                  new sap.m.Link({
                 text: "View Code  ",
-                href: "https://github.com/Qrist0ph/AkuaJs-UI5/blob/gh-pages/screen2.html"
+                href: "https://github.com/Qrist0ph/AkuaJs-UI5/blob/gh-pages/screen3.html"
             }), new sap.m.Label({
                 text: "  ",
                 width: "10px"
             }),
              new sap.m.Link({
                 text: "Stand Alone",
-                href: "screen2.html"
+                href: "screen3.html"
             }),
-                 new AkuaJs.PieChart({
+                 new AkuaJs.DonutChart({
                         axis0: A({
                         crosslists:
                         [
                             TCL([
                                 T([eCar]), T([eBike]), T([eBoat])
-                            ]),
-                            TCL([
-                                T([eAugust])
                             ])
                         ]
                     }),

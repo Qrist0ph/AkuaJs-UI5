@@ -1,3 +1,5 @@
+jQuery.sap.registerModulePath('AkuaJs', 'https://d739cc1f9f50baf2effcb0354365770503c4616c.googledrive.com/host/0B2Od6vq-b27zNWxtRTlaWWJLUU0/AkuaJs-UI5/src/AkuaJs/');
+
 sap.m.Bar.extend("ClickBar", {
     init: function () {
         this._expanded = true;
@@ -87,6 +89,30 @@ sap.ui.jsview("ui5applicationiii3.Main", {
                             },
                             icon: "images/screen10.png"
                         }),
+                         new sap.m.StandardListItem({
+                            title: "Donut Chart",
+                            type: "Navigation",
+                            press: function () {
+                                oSplitApp.toDetail("donutChart");
+                            },
+                            icon: "images/screen3.png"
+                        }),
+                         new sap.m.StandardListItem({
+                            title: "Stacked Columns",
+                            type: "Navigation",
+                            press: function () {
+                                oSplitApp.toDetail("stackedColumns");
+                            },
+                            icon: "images/screen4.png"
+                        }),
+                        new sap.m.StandardListItem({
+                            title: "Grouped Columns",
+                            type: "Navigation",
+                            press: function () {
+                                oSplitApp.toDetail("groupedColumns");
+                            },
+                            icon: "images/screen5.png"
+                        }),
                     ]
                 }),
 
@@ -103,6 +129,9 @@ sap.ui.jsview("ui5applicationiii3.Main", {
         .addDetailPage(sap.ui.view({ id: "map", viewName: "ui5applicationiii3.Map", type: sap.ui.core.mvc.ViewType.JS }))
         .addDetailPage(sap.ui.view({ id: "pieChart", viewName: "ui5applicationiii3.PieChart", type: sap.ui.core.mvc.ViewType.JS }))
         .addDetailPage(sap.ui.view({ id: "columnChart", viewName: "ui5applicationiii3.ColumnChart", type: sap.ui.core.mvc.ViewType.JS }))
+        .addDetailPage(sap.ui.view({ id: "donutChart", viewName: "ui5applicationiii3.DonutChart", type: sap.ui.core.mvc.ViewType.JS }))
+        .addDetailPage(sap.ui.view({ id: "stackedColumns", viewName: "ui5applicationiii3.StackedColumns", type: sap.ui.core.mvc.ViewType.JS }))
+        .addDetailPage(sap.ui.view({ id: "groupedColumns", viewName: "ui5applicationiii3.GroupedColumns", type: sap.ui.core.mvc.ViewType.JS }))
                 
         ;
 
