@@ -180,6 +180,12 @@ sap.ui.jsview("ui5applicationiii3.Main", {
         .addDetailPage(sap.ui.view({ id: "donutChart", viewName: "ui5applicationiii3.DonutChart", type: sap.ui.core.mvc.ViewType.JS }))
         .addDetailPage(sap.ui.view({ id: "stackedColumns", viewName: "ui5applicationiii3.StackedColumns", type: sap.ui.core.mvc.ViewType.JS }))
         .addDetailPage(sap.ui.view({ id: "groupedColumns", viewName: "ui5applicationiii3.GroupedColumns", type: sap.ui.core.mvc.ViewType.JS }))
+        .addDetailPage(sap.ui.view({ id: "stackedArea", viewName: "ui5applicationiii3.StackedArea", type: sap.ui.core.mvc.ViewType.JS }))
+        .addDetailPage(sap.ui.view({ id: "streamGraph", viewName: "ui5applicationiii3.StreamGraph", type: sap.ui.core.mvc.ViewType.JS }))
+        .addDetailPage(sap.ui.view({ id: "normalizedArea", viewName: "ui5applicationiii3.NormalizedArea", type: sap.ui.core.mvc.ViewType.JS }))
+        .addDetailPage(sap.ui.view({ id: "treemap", viewName: "ui5applicationiii3.Treemap", type: sap.ui.core.mvc.ViewType.JS }))
+        .addDetailPage(sap.ui.view({ id: "calHeatmap", viewName: "ui5applicationiii3.CalendarHeatmap", type: sap.ui.core.mvc.ViewType.JS }))
+        .addDetailPage(sap.ui.view({ id: "sunburst", viewName: "ui5applicationiii3.Sunburst", type: sap.ui.core.mvc.ViewType.JS }))
                 
         ;
 
