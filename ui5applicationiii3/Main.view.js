@@ -113,6 +113,54 @@ sap.ui.jsview("ui5applicationiii3.Main", {
                             },
                             icon: "images/screen5.png"
                         }),
+                         new sap.m.StandardListItem({
+                            title: "Stacked Area",
+                            type: "Navigation",
+                            press: function () {
+                                oSplitApp.toDetail("stackedArea");
+                            },
+                            icon: "images/screen6.png"
+                        }),
+                         new sap.m.StandardListItem({
+                            title: "Stream Graph",
+                            type: "Navigation",
+                            press: function () {
+                                oSplitApp.toDetail("streamGraph");
+                            },
+                            icon: "images/screen7.png"
+                        }),
+                         new sap.m.StandardListItem({
+                            title: "Normalized Area",
+                            type: "Navigation",
+                            press: function () {
+                                oSplitApp.toDetail("normalizedArea");
+                            },
+                            icon: "images/screen8.png"
+                        }),
+                         new sap.m.StandardListItem({
+                            title: "Treemap",
+                            type: "Navigation",
+                            press: function () {
+                                oSplitApp.toDetail("treemap");
+                            },
+                            icon: "images/screen9.png"
+                        }),
+                         new sap.m.StandardListItem({
+                            title: "Calendar Heatmap",
+                            type: "Navigation",
+                            press: function () {
+                                oSplitApp.toDetail("calHeatmap");
+                            },
+                            icon: "images/screen11.png"
+                        }),
+                         new sap.m.StandardListItem({
+                            title: "Sunburst",
+                            type: "Navigation",
+                            press: function () {
+                                oSplitApp.toDetail("sunburst");
+                            },
+                            icon: "images/screen12.png"
+                        }),
                     ]
                 }),
 
