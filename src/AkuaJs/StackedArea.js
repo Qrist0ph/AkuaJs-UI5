@@ -6,6 +6,7 @@ jQuery.sap.declare("AkuaJs.StackedArea");
             renderer: function (oRm, oControl) {  
                 oRm.write("<div");  
                 oRm.writeControlData(oControl);  
+                oRm.write(">");  
                 oRm.write("</div>");  
             }, 
              metadata : {  

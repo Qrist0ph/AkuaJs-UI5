@@ -6,7 +6,8 @@ jQuery.sap.declare("AkuaJs.StreamGraph");
             renderer: function (oRm, oControl) {  
                 oRm.write("<div");  
                 oRm.writeControlData(oControl);  
-                oRm.write("</div>");  
+                 oRm.write(">");  
+                oRm.write("</div>");   
             }, 
              metadata : {  
     properties: {  
