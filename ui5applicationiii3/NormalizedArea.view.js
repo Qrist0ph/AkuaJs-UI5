@@ -4,14 +4,17 @@ createContent: function (oController) {
         
 jQuery.sap.require("AkuaJs.NormalizedArea");
 
-    eJune = E(D("Month"), "June");
-    eAugust = E(D("Month"), "August");
-	ePoland = E(D("Country"), "Poland");        
-	eCar = E(D("Product"), "Car");
-	eBike = E(D("Product"), "Bike");
-	eBoat = E(D("Product"), "Boat");
-	eCost = E(D("Measure"), "Costs");
-	eRevenue = E(D("Measure"), "Revenue");   
+eJuni = E(D("monat"), 1030766400000);
+    eAugust = E(D("monat"), 1038632400000);
+            eSeptember = E(D("monat"), 1039732400000);
+
+            ePolen = E(D("land"), "polen");
+            eAuto = E(D("produkt"), "auto");
+            eFahrrad = E(D("produkt"), "fahrread");
+            eBoot = E(D("produkt"), "boot");
+
+            eCost = E(D("measure"), "costs");
+            eRevenue = E(D("measure"), "revenue");
     
     return new sap.m.Page( {
             title: "Normalized Area",
@@ -28,30 +31,31 @@ jQuery.sap.require("AkuaJs.NormalizedArea");
                 href: "screen7.html"
             }),
                  new AkuaJs.NormalizedArea({
-                        axis0: A({
-                        crosslists:
-                        [
-                            TCL([
-                                T([eCar]), T([eBike]), T([eBoat])
-                            ])
-                        ]
-                    }),
-                    
-                    axis1: A({
-                        crosslists:
-                        [
-                            TCL([
-                                T([eJune]),T([eAugust])
-                            ])
-                        ]
-                    }),				
-                    slicer: T([eCost]),
-					connection :[ 
-                                 T([eAugust, eCar, eCost],440)
-						,T([eJune, eCar, eCost],222)
-						,T([eAugust, eBike, eCost],77)	  
-						,T([eJune, eBike, eCost],120)	 
-						,T([eAugust, eBoat, eCost],120)],
+                          axis1: A({
+                    crosslists:
+                    [
+                        TCL([
+                            T([eAuto]), T([eFahrrad]), T([eBoot])
+                        ])
+                    ]
+                }),
+                axis0: A({
+                    crosslists:
+                    [
+                        TCL([
+                            T([eJuni]), T([eAugust]), T([eSeptember])
+                        ])
+                    ]
+                }),
+                slicer: T([eCost]),
+
+                connection: [
+                            T([eAugust, eAuto, eCost], 440), T([eAugust, eFahrrad, eCost], 77)
+                            , T([eAugust, eBoot, eCost], 120),
+                            T([eJuni, eAuto, eCost], 240), T([eJuni, eFahrrad, eCost], 77)
+                            , T([eJuni, eBoot, eCost], 120),
+                             T([eSeptember, eAuto, eCost], 240), T([eSeptember, eFahrrad, eCost], 77)
+                            , T([eSeptember, eBoot, eCost], 320)],
                    colors:["#FFD700", "#F4A460","#990000"],
                    numberFormat:',.2'
 }) ,

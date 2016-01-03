@@ -145,14 +145,14 @@ sap.ui.jsview("ui5applicationiii3.Main", {
                             },
                             icon: "images/screen9.png"
                         }),
-                         new sap.m.StandardListItem({
-                            title: "Calendar Heatmap",
-                            type: "Navigation",
-                            press: function () {
-                                oSplitApp.toDetail("calHeatmap");
-                            },
-                            icon: "images/screen11.png"
-                        }),
+                        //  new sap.m.StandardListItem({
+                        //     title: "Calendar Heatmap",
+                        //     type: "Navigation",
+                        //     press: function () {
+                        //         oSplitApp.toDetail("calHeatmap");
+                        //     },
+                        //     icon: "images/screen11.png"
+                        // }),
                          new sap.m.StandardListItem({
                             title: "Sunburst",
                             type: "Navigation",
