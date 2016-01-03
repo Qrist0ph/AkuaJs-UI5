@@ -38,7 +38,7 @@ sap.ui.jsview("ui5applicationiii3.PieChart", {
                  }),
                  new sap.ui.core.HTML({
                      content: ' '
-                     + '<pre id="sss"><code>'
+                     + '<pre><code>'
                      +'jQuery.sap.require("AkuaJs.PieChart");<br/>'
 +'<br/>'
 +'eAugust = E(D("Month"), "August");<br/>'
