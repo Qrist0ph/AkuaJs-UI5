@@ -42,7 +42,7 @@ jQuery.sap.require("AkuaJs.Treemap");
 					connection :[ 
                               T([eAugust, eBike, eRevenue], 440), T([eAugust, eBike, eCost], 770)
 						, T([eAugust, eBoat, eCost], 120),T([eAugust, eBoat, eRevenue], 44),
-						 T([eAugust, eCar, eCost], 77),T([eAugust, eCar, eRevenue], 333)],
+						 T([eAugust, eCar, eCost], 77),T([eAugust, eCar, eRevenue], -133)],
                    colors:["#FFD700", "#F4A460","#990000"],
                    numberFormat:',.2'
 }) ,
