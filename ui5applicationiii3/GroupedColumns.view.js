@@ -75,7 +75,6 @@ jQuery.sap.require("AkuaJs.GroupedColumns");
 + '                     numberFormat: ",.2"<br/>'
 + '                 })<br/>'
                       + '</code></pre>'
-                + '<script> $("pre code").each(function(i, block) {hljs.highlightBlock(block);});</script>'
              })
             ]
         });

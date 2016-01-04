@@ -71,7 +71,6 @@ sap.ui.jsview("ui5applicationiii3.DonutChart", {
 + '})<br/>'
 + '<br/>'
                          + '</code></pre>'
-                     + '<script> $("pre code").each(function(i, block) {hljs.highlightBlock(block);});</script>'
                    })
             ]
         });
