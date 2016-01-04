@@ -88,7 +88,6 @@ sap.ui.jsview("ui5applicationiii3.StreamGraph", {
   + '}) <br/>'
   + ' <br/>'
                            + '</code></pre>'
-                  + '<script> $("#2FDF9430-E886-4231-9325-6EBBD27F8092").each(function(i, block) {hljs.highlightBlock(block);});</script>'
                    }),
             ]
         });
