@@ -9,21 +9,18 @@
             data-sap-ui-theme="sap_bluecrystal">
 
     </script>
-<title>AkuaJs for SAP UI5</title>
-    <script src="https://rawgit.com/Qrist0ph/AkuaJs/latest/dist/plain/libs/D3/d3.min.js"></script>    
-    <!--<script data-main="https://rawgit.com/Qrist0ph/AkuaJs/latest/src/main.js" src="https://rawgit.com/Qrist0ph/AkuaJs/latest/src/libs/require.js"></script>-->
-      <script data-main="https://rawgit.com/Qrist0ph/AkuaJs/latest/dist/plain/main.js" src="https://rawgit.com/Qrist0ph/AkuaJs/latest/dist/plain/libs/require.js"></script>
-    <link rel="stylesheet" href="https://rawgit.com/Qrist0ph/AkuaJs/latest/dist/plain/libs/nvd3/nv.d3.min.css" type="text/css" />    
- <link rel="stylesheet" href="https://rawgit.com/Qrist0ph/AkuaJs/latest/dist/plain/libs/leaflet/leaflet.css">
-<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
- <link rel="shortcut icon" type="image/png" href="favicon.png">
-<script  src="berliner-bezirke.geojson"></script>
+    <title>AkuaJs for SAP UI5</title>
+    <script src="https://rawgit.com/Qrist0ph/AkuaJs/latest/dist/plain/libs/D3/d3.min.js"></script>
+    <!--<script data-main="https://rawgit.com/Qrist0ph/AkuaJs/latest/dist/plain/main.js" src="https://rawgit.com/Qrist0ph/AkuaJs/latest/dist/plain/libs/require.js"></script>-->
+    <script data-main="https://d739cc1f9f50baf2effcb0354365770503c4616c.googledrive.com/host/0B2Od6vq-b27zNWxtRTlaWWJLUU0/AkuaJs/src/main.js" src="https://d739cc1f9f50baf2effcb0354365770503c4616c.googledrive.com/host/0B2Od6vq-b27zNWxtRTlaWWJLUU0/AkuaJs/src/libs/require.js"></script>
+    <link rel="stylesheet" href="https://rawgit.com/Qrist0ph/AkuaJs/latest/dist/plain/libs/nvd3/nv.d3.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://rawgit.com/Qrist0ph/AkuaJs/latest/dist/plain/libs/leaflet/leaflet.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <script src="berliner-bezirke.geojson"></script>
 
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/default.min.css">
-<!--<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/default.min.css">
 
-<!--<script>hljs.initHighlightingOnLoad();</script>-->
-    
 
     <link href="css/ui5applicationiii3.css" rel="stylesheet" type="text/css" />
     <script>
@@ -35,54 +32,21 @@
         app.addPage(page);
         app.placeAt("content");
     </script>
-
-
-    <style>
-        #map {
-            width: 800px;
-            height: 500px;
-        }
-        .info {
-            padding: 6px 8px;
-            font: 14px/16px Arial, Helvetica, sans-serif;
-            background: white;
-            background: rgba(255,255,255,0.8);
-            box-shadow: 0 0 15px rgba(0,0,0,0.2);
-            border-radius: 5px;
-        }
-            .info h4 {
-                margin: 0 0 5px;
-                color: #777;
-            }
-        .legend {
-            text-align: left;
-            line-height: 18px;
-            color: #555;
-        }
-            .legend i {
-                width: 18px;
-                height: 18px;
-                float: left;
-                margin-right: 8px;
-                opacity: 0.7;
-            }
-    </style>
-    
-    
-    
-
+   
 </head>
 <body class="sapUiBody" role="application">
     <div id="content"></div>
 </body>
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-71859522-1', 'auto');
-  ga('send', 'pageview');
+    ga('create', 'UA-71859522-1', 'auto');
+    ga('send', 'pageview');
 
 </script>
 </html>
