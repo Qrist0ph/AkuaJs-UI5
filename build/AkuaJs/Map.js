@@ -6,7 +6,8 @@ jQuery.sap.declare("AkuaJs.Map");
             renderer: function (oRm, oControl) {  
                 oRm.write("<div");  
                 oRm.writeControlData(oControl);  
-                oRm.write("</div>");  
+                 oRm.write(">");  
+                oRm.write("</div>"); 
             }, 
              metadata : {  
     properties: {  
@@ -15,6 +16,10 @@ jQuery.sap.declare("AkuaJs.Map");
       "connection": {type : "any"},  
       "colors": {type : "string[]"},  
       "numberFormat": {type : "string",defaultValue: ',.0f'},
+      "mapCenter": {type : "any"},
+      "zoom": {type : "any"},  
+      "geoJson": {type : "any"},  
+      "click": {type : "any"},    
     }}, 
             onAfterRendering: function (event) {  
 			var me = this;
@@ -25,7 +30,11 @@ jQuery.sap.declare("AkuaJs.Map");
 					slicer: me.getSlicer(),
 					Connection : LocalCubeConnection(HyperCube(SDTL( me.getConnection()))),
                     colors:me.getColors(),
-                    numberFormat :  me.getNumberFormat()
+                    numberFormat :  me.getNumberFormat(),
+                    mapCenter :  me.getMapCenter(),
+                    zoom :  me.getZoom(),
+                    geoJson :  me.getGeoJson(),
+                    click :  me.getClick()
 
 				});
 
