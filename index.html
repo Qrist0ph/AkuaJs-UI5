@@ -11,8 +11,8 @@
     </script>
     <title>AkuaJs for SAP UI5</title>
     <script src="https://rawgit.com/Qrist0ph/AkuaJs/latest/dist/plain/libs/D3/d3.min.js"></script>
-    <!--<script data-main="https://rawgit.com/Qrist0ph/AkuaJs/latest/dist/plain/main.js" src="https://rawgit.com/Qrist0ph/AkuaJs/latest/dist/plain/libs/require.js"></script>-->
-    <script data-main="https://d739cc1f9f50baf2effcb0354365770503c4616c.googledrive.com/host/0B2Od6vq-b27zNWxtRTlaWWJLUU0/AkuaJs/src/main.js" src="https://d739cc1f9f50baf2effcb0354365770503c4616c.googledrive.com/host/0B2Od6vq-b27zNWxtRTlaWWJLUU0/AkuaJs/src/libs/require.js"></script>
+    <script data-main="https://rawgit.com/Qrist0ph/AkuaJs/latest/dist/plain/main.js" src="https://rawgit.com/Qrist0ph/AkuaJs/latest/dist/plain/libs/require.js"></script>
+    <!--<script data-main="https://d739cc1f9f50baf2effcb0354365770503c4616c.googledrive.com/host/0B2Od6vq-b27zNWxtRTlaWWJLUU0/AkuaJs/src/main.js" src="https://d739cc1f9f50baf2effcb0354365770503c4616c.googledrive.com/host/0B2Od6vq-b27zNWxtRTlaWWJLUU0/AkuaJs/src/libs/require.js"></script>-->
     <link rel="stylesheet" href="https://rawgit.com/Qrist0ph/AkuaJs/latest/dist/plain/libs/nvd3/nv.d3.min.css" type="text/css" />
     <link rel="stylesheet" href="https://rawgit.com/Qrist0ph/AkuaJs/latest/dist/plain/libs/leaflet/leaflet.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
@@ -27,26 +27,49 @@
         sap.ui.localResources("ui5applicationiii3");
         sap.ui.localResources("util");
         sap.ui.localResources("i18n");
+
+        //jQuery.sap.registerModulePath('AkuaJs', 'https://d739cc1f9f50baf2effcb0354365770503c4616c.googledrive.com/host/0B2Od6vq-b27zNWxtRTlaWWJLUU0/AkuaJs-UI5/src/AkuaJs/');
+        jQuery.sap.registerModulePath('AkuaJs', 'https://rawgit.com/Qrist0ph/AkuaJs-UI5/latest/build/AkuaJs/');
+
         var app = new sap.m.App({ initialPage: "app" });
         var page = sap.ui.view({ id: "app", viewName: "ui5applicationiii3.Main", type: sap.ui.core.mvc.ViewType.JS });
         app.addPage(page);
         app.placeAt("content");
     </script>
-   
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-71859522-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
 </head>
 <body class="sapUiBody" role="application">
-    <div id="content"></div>
+    <div id="content" style="height:90%"></div>
+    <div style="height:10%">
+        <div style="margin-top:10px">
+            <div style="float: left;  ">
+                Copyright © 2016  <a href="mailto:christoph.aussem@yaico.de">Christoph Au&szlig;em</a> <br />
+                <a href="https://de.linkedin.com/pub/christoph-au%C3%9Fem/21/8b4/27">
+                    <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_liprofile_blue_80x15_de_DE.png?locale=" width="80" height="15" border="0" alt="Profil von Christoph Außem auf LinkedIn anzeigen">
+                </a>
+                <br />
+            </div>
+
+            <div style="float: left; margin-left:50px; ">
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/3.0/88x31.png" /></a>
+                <br />This work is licensed under a  <br />
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Attribution-NonCommercial 3.0 Unported License</a>.
+            </div>
+        </div>
+    </div>
 </body>
-<script>
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date(); a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', 'UA-71859522-1', 'auto');
-    ga('send', 'pageview');
 
-</script>
+
 </html>

@@ -23,7 +23,8 @@ createContent: function (oController) {
               +''
               +'<section id="downloads" class="clearfix">'
               +' <a href="https://rawgit.com/Qrist0ph/AkuaJs/latest/bin/AkuaJUi5.zip" id="download-zip" class="button"><span>Download .zip</span></a>'
-              +'<a href="https://github.com/Qrist0ph/AkuaJs-UI5" id="view-on-github" class="button"><span>View on GitHub</span></a>'
+              + '<a href="https://github.com/Qrist0ph/AkuaJs-UI5" id="view-on-github" class="button"><span>View on GitHub</span></a>'
+              + '<a href="http://qrist0ph.github.io/AkuaJs/" id="view-on-akuajs" class="button"><span>AkuaJs Library</span></a>'
               +'</section>'
               +''  
               +'<div id="wrapper"> <h3>Why use AkuaJs</h3>'
@@ -101,14 +102,7 @@ createContent: function (oController) {
 +'&lt;/body&gt;<br/>'
 +'&lt;/html&gt;<br/>'
               + '</code></pre>'
-              +'<hr/>'
-            
-              +''
-              +'Copyright © 2015  <a href="mailto:christoph.aussem@yaico.de">Christoph Au&szlig;em</a> <br/> <a href="https://de.linkedin.com/pub/christoph-au%C3%9Fem/21/8b4/27">'
-              +'<img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_liprofile_blue_80x15_de_DE.png?locale=" width="80" height="15" border="0" alt="Profil von Christoph Außem auf LinkedIn anzeigen">'
              
-              +'<br/>'
-              +'<a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Attribution-NonCommercial 3.0 Unported License</a>.'
             })
             
             ]

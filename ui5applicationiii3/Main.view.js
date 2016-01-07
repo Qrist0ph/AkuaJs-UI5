@@ -1,5 +1,3 @@
-jQuery.sap.registerModulePath('AkuaJs', 'https://d739cc1f9f50baf2effcb0354365770503c4616c.googledrive.com/host/0B2Od6vq-b27zNWxtRTlaWWJLUU0/AkuaJs-UI5/src/AkuaJs/');
-
 sap.m.Bar.extend("ClickBar", {
     init: function () {
         this._expanded = true;
