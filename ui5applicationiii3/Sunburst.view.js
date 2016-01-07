@@ -68,7 +68,7 @@ sap.ui.jsview("ui5applicationiii3.Sunburst", {
 + '        , T([eAugust, eBoat, eCost], 120)],<br/>'
 + '    colors: ["#FFD700", "#F4A460", "#990000"],<br/>'
 + '    numberFormat: ",.2"<br/>'
-+ '}),<br/>'
++ '})<br/>'
 + '<br/>'
                       + '</code></pre>'
                   }),

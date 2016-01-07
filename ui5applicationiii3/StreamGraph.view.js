@@ -67,7 +67,7 @@ sap.ui.jsview("ui5applicationiii3.StreamGraph", {
   + 'eBoot = E(D("produkt"), "boot"); <br/>'
   + 'eCost = E(D("measure"), "costs"); <br/>'
   + ' <br/>'
-  + 'new AkuaJs.StackedArea({ <br/>'
+  + 'new AkuaJs.StreamGraph({ <br/>'
   + '    axis1: A({ <br/>'
   + '        crosslists: [TCL([T([eAuto]), T([eFahrrad]), T([eBoot])])] <br/>'
   + '    }), <br/>'

@@ -17,14 +17,14 @@ sap.ui.jsview("ui5applicationiii3.StackedColumns", {
             content: [
                  new sap.m.Link({
                      text: "View Code  ",
-                     href: "https://github.com/Qrist0ph/AkuaJs-UI5/blob/gh-pages/screen3.html"
+                     href: "https://github.com/Qrist0ph/AkuaJs-UI5/blob/gh-pages/screen4.html"
                  }), new sap.m.Label({
                      text: "  ",
                      width: "10px"
                  }),
              new sap.m.Link({
                  text: "Stand Alone",
-                 href: "screen3.html"
+                 href: "screen4.html"
              }),
                  new AkuaJs.StackedColumns({
                      axis0: A({

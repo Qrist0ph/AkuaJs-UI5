@@ -17,14 +17,14 @@ sap.ui.jsview("ui5applicationiii3.NormalizedArea", {
             content: [
                  new sap.m.Link({
                      text: "View Code  ",
-                     href: "https://github.com/Qrist0ph/AkuaJs-UI5/blob/gh-pages/screen7.html"
+                     href: "https://github.com/Qrist0ph/AkuaJs-UI5/blob/gh-pages/screen8.html"
                  }), new sap.m.Label({
                      text: "  ",
                      width: "10px"
                  }),
              new sap.m.Link({
                  text: "Stand Alone",
-                 href: "screen7.html"
+                 href: "screen8.html"
              }),
                  new AkuaJs.NormalizedArea({
                      axis1: A({
@@ -58,7 +58,7 @@ sap.ui.jsview("ui5applicationiii3.NormalizedArea", {
   + 'eBoot = E(D("produkt"), "boot"); <br/>'
   + 'eCost = E(D("measure"), "costs"); <br/>'
   + ' <br/>'
-  + 'new AkuaJs.StackedArea({ <br/>'
+  + 'new AkuaJs.NormalizedArea({ <br/>'
   + '    axis1: A({ <br/>'
   + '        crosslists: [TCL([T([eAuto]), T([eFahrrad]), T([eBoot])])] <br/>'
   + '    }), <br/>'

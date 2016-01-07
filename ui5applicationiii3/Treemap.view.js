@@ -76,7 +76,7 @@ sap.ui.jsview("ui5applicationiii3.Treemap", {
 + '         T([eAugust, eCar, eCost], 77), T([eAugust, eCar, eRevenue], -133)], <br/>'
 + '    colors: ["#FFD700", "#F4A460", "#990000"], <br/>'
 + '    numberFormat: ",.2" <br/>'
-+ '}), <br/>'
++ '}) <br/>'
 + ' <br/>'
                       + '</code></pre>'
                   }),
