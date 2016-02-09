@@ -46,7 +46,7 @@ sap.ui.jsview("ui5applicationiii3.Main", {
         return null;
     },
 
-    
+
     createContent: function (oController) {
         var oMasterPage1 = new sap.m.Page("master1", {
             title: "AkuaJs",
@@ -55,14 +55,14 @@ sap.ui.jsview("ui5applicationiii3.Main", {
                     id: "list1",
                     items: [
                          new sap.m.StandardListItem({
-                            title: "Start",
-                            type: "Navigation",
-                            press: function () {
-                                oSplitApp.toDetail("start");
-                            },
-                            icon:"images/tesseract.png"
-                           
-                        }),
+                             title: "Start",
+                             type: "Navigation",
+                             press: function () {
+                                 oSplitApp.toDetail("start");
+                             },
+                             icon: "images/tesseract.png"
+
+                         }),
                         new sap.m.StandardListItem({
                             title: "Map",
                             type: "Navigation",
@@ -72,37 +72,37 @@ sap.ui.jsview("ui5applicationiii3.Main", {
                             icon: "images/screen1.png"
                         }),
                          new sap.m.StandardListItem({
-                            title: "Pie Chart",
-                            type: "Navigation",
-                            press: function () {
-                                oSplitApp.toDetail("pieChart");
-                            },
-                            icon: "images/screen2.png"
-                        }),
+                             title: "Pie Chart",
+                             type: "Navigation",
+                             press: function () {
+                                 oSplitApp.toDetail("pieChart");
+                             },
+                             icon: "images/screen2.png"
+                         }),
                           new sap.m.StandardListItem({
-                            title: "Column Chart",
-                            type: "Navigation",
-                            press: function () {
-                                oSplitApp.toDetail("columnChart");
-                            },
-                            icon: "images/screen10.png"
-                        }),
+                              title: "Column Chart",
+                              type: "Navigation",
+                              press: function () {
+                                  oSplitApp.toDetail("columnChart");
+                              },
+                              icon: "images/screen10.png"
+                          }),
                          new sap.m.StandardListItem({
-                            title: "Donut Chart",
-                            type: "Navigation",
-                            press: function () {
-                                oSplitApp.toDetail("donutChart");
-                            },
-                            icon: "images/screen3.png"
-                        }),
+                             title: "Donut Chart",
+                             type: "Navigation",
+                             press: function () {
+                                 oSplitApp.toDetail("donutChart");
+                             },
+                             icon: "images/screen3.png"
+                         }),
                          new sap.m.StandardListItem({
-                            title: "Stacked Columns",
-                            type: "Navigation",
-                            press: function () {
-                                oSplitApp.toDetail("stackedColumns");
-                            },
-                            icon: "images/screen4.png"
-                        }),
+                             title: "Stacked Columns",
+                             type: "Navigation",
+                             press: function () {
+                                 oSplitApp.toDetail("stackedColumns");
+                             },
+                             icon: "images/screen4.png"
+                         }),
                         new sap.m.StandardListItem({
                             title: "Grouped Columns",
                             type: "Navigation",
@@ -112,37 +112,37 @@ sap.ui.jsview("ui5applicationiii3.Main", {
                             icon: "images/screen5.png"
                         }),
                          new sap.m.StandardListItem({
-                            title: "Stacked Area",
-                            type: "Navigation",
-                            press: function () {
-                                oSplitApp.toDetail("stackedArea");
-                            },
-                            icon: "images/screen6.png"
-                        }),
+                             title: "Stacked Area",
+                             type: "Navigation",
+                             press: function () {
+                                 oSplitApp.toDetail("stackedArea");
+                             },
+                             icon: "images/screen6.png"
+                         }),
                          new sap.m.StandardListItem({
-                            title: "Stream Graph",
-                            type: "Navigation",
-                            press: function () {
-                                oSplitApp.toDetail("streamGraph");
-                            },
-                            icon: "images/screen7.png"
-                        }),
+                             title: "Stream Graph",
+                             type: "Navigation",
+                             press: function () {
+                                 oSplitApp.toDetail("streamGraph");
+                             },
+                             icon: "images/screen7.png"
+                         }),
                          new sap.m.StandardListItem({
-                            title: "Normalized Area",
-                            type: "Navigation",
-                            press: function () {
-                                oSplitApp.toDetail("normalizedArea");
-                            },
-                            icon: "images/screen8.png"
-                        }),
+                             title: "Normalized Area",
+                             type: "Navigation",
+                             press: function () {
+                                 oSplitApp.toDetail("normalizedArea");
+                             },
+                             icon: "images/screen8.png"
+                         }),
                          new sap.m.StandardListItem({
-                            title: "Treemap",
-                            type: "Navigation",
-                            press: function () {
-                                oSplitApp.toDetail("treemap");
-                            },
-                            icon: "images/screen9.png"
-                        }),
+                             title: "Treemap",
+                             type: "Navigation",
+                             press: function () {
+                                 oSplitApp.toDetail("treemap");
+                             },
+                             icon: "images/screen9.png"
+                         }),
                         //  new sap.m.StandardListItem({
                         //     title: "Calendar Heatmap",
                         //     type: "Navigation",
@@ -152,13 +152,21 @@ sap.ui.jsview("ui5applicationiii3.Main", {
                         //     icon: "images/screen11.png"
                         // }),
                          new sap.m.StandardListItem({
-                            title: "Sunburst",
-                            type: "Navigation",
-                            press: function () {
-                                oSplitApp.toDetail("sunburst");
-                            },
-                            icon: "images/screen12.png"
-                        }),
+                             title: "Sunburst",
+                             type: "Navigation",
+                             press: function () {
+                                 oSplitApp.toDetail("sunburst");
+                             },
+                             icon: "images/screen12.png"
+                         }),
+                            new sap.m.StandardListItem({
+                                title: "Geo Heatmap",
+                                type: "Navigation",
+                                press: function () {
+                                    oSplitApp.toDetail("geoheatmap");
+                                },
+                                icon: "images/screen13.png"
+                            }),
                     ]
                 }),
 
@@ -184,7 +192,7 @@ sap.ui.jsview("ui5applicationiii3.Main", {
         .addDetailPage(sap.ui.view({ id: "treemap", viewName: "ui5applicationiii3.Treemap", type: sap.ui.core.mvc.ViewType.JS }))
         .addDetailPage(sap.ui.view({ id: "calHeatmap", viewName: "ui5applicationiii3.CalendarHeatmap", type: sap.ui.core.mvc.ViewType.JS }))
         .addDetailPage(sap.ui.view({ id: "sunburst", viewName: "ui5applicationiii3.Sunburst", type: sap.ui.core.mvc.ViewType.JS }))
-                
+        .addDetailPage(sap.ui.view({ id: "geoheatmap", viewName: "ui5applicationiii3.GeoHeatmap", type: sap.ui.core.mvc.ViewType.JS }))
         ;
 
         oSplitApp.setInitialDetail("start");
