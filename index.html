@@ -13,7 +13,7 @@
 
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <script src="https://cdn.rawgit.com/Qrist0ph/AkuaJs/latest/dist/plain/libs/heatmap/heatmap.min.js"></script>
-    <script src="https://cdn.rawgit.com/Qrist0ph/AkuaJs/latest/dist/plain/libs/heatmap/gmaps-heatmap.js"></script> 
+    <script src="https://cdn.rawgit.com/Qrist0ph/AkuaJs/latest/dist/plain/libs/heatmap/gmaps-heatmap.js"></script>
 
 
     <script src="https://cdn.rawgit.com/Qrist0ph/AkuaJs/latest/dist/plain/libs/D3/d3.min.js"></script>
@@ -41,6 +41,22 @@
         var page = sap.ui.view({ id: "app", viewName: "ui5applicationiii3.Main", type: sap.ui.core.mvc.ViewType.JS });
         app.addPage(page);
         app.placeAt("content");
+
+
+
+        var dataLoaderBusyIndicator = new sap.m.BusyDialog("dataLoaderBusyIndicator",
+                                                                            {
+                                                                                showCancelButton: false,
+                                                                                title: "Need help?",
+                                                                                text: "Need help building your UI5 App? Contact us at ui5@yaico.de",
+                                                                                cancelButtonText: "OK",
+                                                                                showCancelButton: true,
+                                                                            });
+        jQuery.sap.delayedCall(10000, this, function () {
+            dataLoaderBusyIndicator.open();
+        });
+
+
     </script>
     <script>
         (function (i, s, o, g, r, a, m) {
