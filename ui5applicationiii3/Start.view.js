@@ -22,7 +22,7 @@ createContent: function (oController) {
               +''
               +''
               +'<section id="downloads" class="clearfix">'
-              +' <a href="https://rawgit.com/Qrist0ph/AkuaJs/latest/bin/AkuaJUi5.zip" id="download-zip" class="button"><span>Download .zip</span></a>'
+              +' <a href="https://rawgit.com/Qrist0ph/AkuaJs/latest/bin/AkuaJs-Ui5.zip" id="download-zip" class="button"><span>Download .zip</span></a>'
               + '<a href="https://github.com/Qrist0ph/AkuaJs-UI5" id="view-on-github" class="button"><span>View on GitHub</span></a>'
               + '<a href="http://qrist0ph.github.io/AkuaJs/" id="view-on-akuajs" class="button"><span>AkuaJs Library</span></a>'
               +'</section>'
