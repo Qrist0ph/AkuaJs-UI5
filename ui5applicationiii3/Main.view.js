@@ -67,7 +67,7 @@ sap.ui.jsview("ui5applicationiii3.Main", {
                             title: "Map",
                             type: "Navigation",
                             press: function () {
-                                ga('send', 'event', 'ShowWidget', '0', 'Map');
+                                ga('send', 'event', 'ShowWidget', 'Map', 'Map');
                                 oSplitApp.toDetail("map");
                             },
                             icon: "images/screen1.png"
@@ -76,7 +76,7 @@ sap.ui.jsview("ui5applicationiii3.Main", {
                              title: "Pie Chart",
                              type: "Navigation",
                              press: function () {
-                                  ga('send', 'event', 'ShowWidget', '0', 'Pie Chart');
+                                  ga('send', 'event', 'ShowWidget', 'Pie Chart', 'Pie Chart');
                                  oSplitApp.toDetail("pieChart");
                              },
                              icon: "images/screen2.png"
@@ -85,6 +85,7 @@ sap.ui.jsview("ui5applicationiii3.Main", {
                               title: "Column Chart",
                               type: "Navigation",
                               press: function () {
+                                   ga('send', 'event', 'ShowWidget', 'columnChart', 'columnChart');
                                   oSplitApp.toDetail("columnChart");
                               },
                               icon: "images/screen10.png"
@@ -93,6 +94,7 @@ sap.ui.jsview("ui5applicationiii3.Main", {
                              title: "Donut Chart",
                              type: "Navigation",
                              press: function () {
+                                  ga('send', 'event', 'ShowWidget', 'donutChart', 'donutChart');
                                  oSplitApp.toDetail("donutChart");
                              },
                              icon: "images/screen3.png"
@@ -101,6 +103,7 @@ sap.ui.jsview("ui5applicationiii3.Main", {
                              title: "Stacked Columns",
                              type: "Navigation",
                              press: function () {
+                                  ga('send', 'event', 'ShowWidget', 'stackedColumns', 'stackedColumns');
                                  oSplitApp.toDetail("stackedColumns");
                              },
                              icon: "images/screen4.png"
@@ -109,6 +112,7 @@ sap.ui.jsview("ui5applicationiii3.Main", {
                             title: "Grouped Columns",
                             type: "Navigation",
                             press: function () {
+                                 ga('send', 'event', 'ShowWidget', 'groupedColumns', 'groupedColumns');
                                 oSplitApp.toDetail("groupedColumns");
                             },
                             icon: "images/screen5.png"
@@ -117,6 +121,7 @@ sap.ui.jsview("ui5applicationiii3.Main", {
                              title: "Stacked Area",
                              type: "Navigation",
                              press: function () {
+                                  ga('send', 'event', 'ShowWidget', 'stackedArea', 'stackedArea');
                                  oSplitApp.toDetail("stackedArea");
                              },
                              icon: "images/screen6.png"
@@ -125,6 +130,7 @@ sap.ui.jsview("ui5applicationiii3.Main", {
                              title: "Stream Graph",
                              type: "Navigation",
                              press: function () {
+                                  ga('send', 'event', 'ShowWidget', 'streamGraph', 'streamGraph');
                                  oSplitApp.toDetail("streamGraph");
                              },
                              icon: "images/screen7.png"
@@ -133,6 +139,7 @@ sap.ui.jsview("ui5applicationiii3.Main", {
                              title: "Normalized Area",
                              type: "Navigation",
                              press: function () {
+                                  ga('send', 'event', 'ShowWidget', 'normalizedArea', 'normalizedArea');
                                  oSplitApp.toDetail("normalizedArea");
                              },
                              icon: "images/screen8.png"
@@ -141,6 +148,7 @@ sap.ui.jsview("ui5applicationiii3.Main", {
                              title: "Treemap",
                              type: "Navigation",
                              press: function () {
+                                  ga('send', 'event', 'ShowWidget', 'treemap', 'treemap');
                                  oSplitApp.toDetail("treemap");
                              },
                              icon: "images/screen9.png"
@@ -157,6 +165,7 @@ sap.ui.jsview("ui5applicationiii3.Main", {
                              title: "Sunburst",
                              type: "Navigation",
                              press: function () {
+                                  ga('send', 'event', 'ShowWidget', 'sunburst', 'sunburst');
                                  oSplitApp.toDetail("sunburst");
                              },
                              icon: "images/screen12.png"
@@ -165,6 +174,7 @@ sap.ui.jsview("ui5applicationiii3.Main", {
                                 title: "Geo Heatmap",
                                 type: "Navigation",
                                 press: function () {
+                                     ga('send', 'event', 'ShowWidget', 'geoheatmap', 'geoheatmap');
                                     oSplitApp.toDetail("geoheatmap");
                                 },
                                 icon: "images/screen13.png"
