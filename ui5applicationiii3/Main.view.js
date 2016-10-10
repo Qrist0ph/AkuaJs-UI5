@@ -67,6 +67,7 @@ sap.ui.jsview("ui5applicationiii3.Main", {
                             title: "Map",
                             type: "Navigation",
                             press: function () {
+                                ga('send', 'event', 'ShowWidget', '0', 'Map');
                                 oSplitApp.toDetail("map");
                             },
                             icon: "images/screen1.png"
@@ -75,6 +76,7 @@ sap.ui.jsview("ui5applicationiii3.Main", {
                              title: "Pie Chart",
                              type: "Navigation",
                              press: function () {
+                                  ga('send', 'event', 'ShowWidget', '0', 'Pie Chart');
                                  oSplitApp.toDetail("pieChart");
                              },
                              icon: "images/screen2.png"
